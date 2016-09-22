@@ -3,17 +3,17 @@ require "language/go"
 class GitGitlab < Formula
   desc "Git CLI support for GitLab"
   homepage "https://github.com/numa08/git-gitlab"
-  url "https://github.com/numa08/git-gitlab/archive/9a1a74a7609178f25afc1786e01c2375762de48c.tar.gz"
+  url "https://github.com/numa08/git-gitlab/archive/f951d0528838aad99f768d504b36b03194daa72e.tar.gz"
   version "0.1.0"
-  sha256 "3cb01102d8dcf523fa5c276719d386bc830c2d9050bfaa3911e166276f623783"
+  sha256 "83a902f6aa3f9b42af5e3aae557f6a9de0e6ca49873d2f118712aac952409d5f"
 
   depends_on "libgit2"
   depends_on "go" => :build
   depends_on "pkg-config" => :build
 
-  go_resource "gopkg.in/libgit2/git2go.v23" do
-    url "https://gopkg.in/libgit2/git2go.v23.git",
-      :revision => "fa644d2fc9efa3baee93b525212d76dfa17a5db5"
+  go_resource "gopkg.in/libgit2/git2go.v24" do
+    url "https://gopkg.in/libgit2/git2go.v24.git",
+      :revision => "241aa34d83b210ceaab7029c46e05794f2ea9797"
   end
 
   go_resource "github.com/plouc/go-gitlab-client" do
