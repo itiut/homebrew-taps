@@ -18,12 +18,12 @@ class GitGitlab < Formula
 
   go_resource "github.com/plouc/go-gitlab-client" do
     url "https://github.com/plouc/go-gitlab-client.git",
-      :revision => "a526ef09e9e03f673a43ecd4a687abf6c25343ca"
+      :revision => "97509738052118879f30ea4243998228468d3a2b"
   end
 
   go_resource "github.com/codegangsta/cli" do
     url "https://github.com/codegangsta/cli.git",
-      :revision => "f7b459e3463391ed8bd9cf1515d0d27ccf835efb"
+      :revision => "d53eb991652b1d438abdd34ce4bfa3ef1539108e"
   end
 
   def install
