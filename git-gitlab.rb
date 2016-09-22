@@ -7,9 +7,9 @@ class GitGitlab < Formula
   version "0.1.0"
   sha256 "3cb01102d8dcf523fa5c276719d386bc830c2d9050bfaa3911e166276f623783"
 
-  depends_on "libgit2" => :build
-  depends_on "pkg-config" => :build
+  depends_on "libgit2"
   depends_on "go" => :build
+  depends_on "pkg-config" => :build
 
   go_resource "gopkg.in/libgit2/git2go.v23" do
     url "https://gopkg.in/libgit2/git2go.v23.git",
